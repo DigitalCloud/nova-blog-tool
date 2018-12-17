@@ -24,7 +24,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DigitalCloud\\NovaBlogTool\\ToolServiceProvider"
+                "DigitalCloud\\NovaBlogTool\\ToolServiceProvider",
+                "Yassi\\NovaCustomForm\\NovaCustomFormServiceProvider"
             ]
         }
     },
