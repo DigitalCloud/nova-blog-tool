@@ -9,7 +9,7 @@
     "require": {
         "php": ">=7.1.0",
 		"spatie/laravel-sluggable": "^2.1",
-		"spatie/laravel-translatable": "^2.0",
+		"spatie/laravel-translatable": "^3.1.0",
 		"spatie/nova-tags-field": "*",
 		"digitalcloud/multilingual-nova": "^1.0",
 		"infinety-es/nova-filemanager": "^1.1",
