@@ -16,11 +16,7 @@ use DigitalCloud\NovaBlogTool\Bootstrap\Blog;
 */
 
 
-Route::get('/check-migrations', function (Request $request) {
-    return response()->json([
-        'installed' => Blog::isInstalled(),
-    ], 200);
-});
+Route::get('/check-migrations', 'DigitalCloud\NovaBlogTool\Http\Controllers\DashboardController@checkMigrations');
 
 Route::get('/migrate-tables', 'DigitalCloud\NovaBlogTool\Http\Controllers\MigrationController@execute');
 Route::get('/reset-content', 'DigitalCloud\NovaBlogTool\Http\Controllers\ResetController@execute');
