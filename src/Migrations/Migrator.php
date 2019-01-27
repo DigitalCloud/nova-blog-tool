@@ -12,6 +12,8 @@ class Migrator
             'comments' => new CommentMigration,
             'tags' => new TagMigration,
             'post_category' => new PostCategoryPivotMigration,
+            'nova_pending_trix_attachments' => new NovaPendingTrixAttachmentsMigration(),
+            'nova_trix_attachments' => new NovaTrixAttachmentsMigration(),
         ];
     }
 }

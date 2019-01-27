@@ -173,7 +173,7 @@ class Post extends Resource
                 ])->withMeta(['type' => 'hidden'])->exceptOnForms(),
                 Boolean::make('Published')->withMeta(['type' => 'hidden']),
 
-                Trix::make('content')->rules('required')->withMeta(['label' => false]),
+                Trix::make('content')->withFiles('public')->rules('required')->withMeta(['label' => false]),
                 Multilingual::make('lang'),
             ],
             'main', 'Main Info'

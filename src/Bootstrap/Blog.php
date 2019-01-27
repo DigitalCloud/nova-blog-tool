@@ -21,7 +21,9 @@ class Blog
             Schema::hasTable('categories') &&
             Schema::hasTable('comments') &&
             Schema::hasTable('tags') &&
-            Schema::hasTable('post_category');
+            Schema::hasTable('post_category') &&
+            Schema::hasTable('nova_pending_trix_attachments') &&
+            Schema::hasTable('nova_trix_attachments');
     }
 
     public static function injectToolResources()
