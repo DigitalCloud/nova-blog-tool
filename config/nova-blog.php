@@ -7,7 +7,7 @@ return [
         ],
 
         'posts' => [
-            'search' => ['id', 'title', 'summary', 'body'],
+            'search' => ['id', 'title', 'content'],
         ],
 
         'categories' => [
